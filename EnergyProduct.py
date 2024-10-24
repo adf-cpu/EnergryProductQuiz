@@ -96,7 +96,7 @@ allowed_usernames = {
     
 }
 # Define your questions
-microwave= {
+EP= {
 "true_false": [
     {"question": "Delta-Star Connections are Commonly used in Step Up Transformers for Power Distribution.", "answer": "False"},
     {"question": "Star Connection has a neutral point while Delta connection doesn’t have a neutral point.", "answer": "True"},
@@ -940,7 +940,7 @@ microwave= {
 if not st.session_state.flattened_questions:
     flattened_questions = []
 
-    for category, qs in microwave.items():
+    for category, qs in EP.items():
         for q in qs:
             q['type'] = category  # Set the type for each question
             flattened_questions.append(q)
